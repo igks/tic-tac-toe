@@ -1,0 +1,91 @@
+/* styling the container */
+#container {
+  position: relative;
+  text-align: center;
+  margin: auto;
+}
+/* styling title */
+#title {
+  position: relative;
+  text-align: center;
+  margin: auto;
+}
+/* styling the board */
+table {
+  border-collapse: collapse;
+  position: absolute;
+  left: 50%;
+  margin-left: -155px;
+  top: 120px;
+}
+td {
+  border: 2px solid black;
+  height: 100px;
+  width: 100px;
+  text-align: center;
+  vertical-align: middle;
+  font-family: Consolas;
+  font-size: 70px;
+  cursor: pointer;
+}
+/* remove top line of the board */
+table tr:first-child td {
+  border-top: 0;
+}
+/* remove bottom line of the board */
+table tr:last-child td {
+  border-bottom: 0;
+}
+/* remove left line of the board */
+table tr td:first-child {
+  border-left: 0;
+}
+/* remove right line of the board */
+table tr td:last-child {
+  border-right: 0;
+}
+/* end of board styling */
+
+/* styling the window message */
+#window-message {
+  display: none;
+  width: 200px;
+  top: 180px;
+  background-color: rgba(91, 213, 243, 0.8);
+  position: absolute;
+  left: 50%;
+  margin-left: -100px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  text-align: center;
+  border-radius: 10px;
+  color: black;
+  font-size: 2em;
+}
+/* styling the botton */
+#replay {
+  display: none;
+  position: absolute;
+  width: 300px;
+  left: 50%;
+  margin-left: -150px;
+  text-align: center;
+  border-radius: 15px;
+  background-color: green;
+  color: white;
+  padding: 10px;
+  top: 450px;
+}
+#close {
+  display: none;
+  position: absolute;
+  width: 50px;
+  left: 150px;
+  margin-left: -150px;
+  text-align: center;
+  border-radius: 15px;
+  background-color: red;
+  color: white;
+  padding: 10px;
+  top: 0;
+}
